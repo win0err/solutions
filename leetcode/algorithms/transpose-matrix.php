@@ -1,7 +1,6 @@
 <?php
 
 class Solution {
-
     /**
      * @param Integer[][] $A
      * @return Integer[][]
