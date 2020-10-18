@@ -5,30 +5,30 @@ from math import inf
 class CLRSSolution:
     def __init__(self, A: List):
         self.A = A
-        
+
     def _findMaxCrossingSubarray(self, low: int, mid: int, high: int):
         max_left = max_right = None
 
         left_sum = -inf
-        temp_sum = 0
+        sum = 0
         for i in range(mid, low-1, -1):
-            temp_sum += A[i]
-            if temp_sum > left_sum:
-                left_sum = temp_sum
+            sum += A[i]
+            if sum > left_sum:
+                left_sum = sum
                 max_left = i
 
         right_sum = -inf
-        temp_sum = 0
+        sum = 0
         for i in range(mid+1, high+1):
-            temp_sum += A[i]
-            if temp_sum > right_sum:
-                right_sum = temp_sum
+            sum += A[i]
+            if sum > right_sum:
+                right_sum = sum
                 max_right = i
-        
+
         return (max_left, max_right, left_sum+right_sum)
 
-    def _findMaxSubarray(self, low, high):
-        if high == low: 
+    def _findMaxSubarray(self, low: int, high: int):
+        if high == low:
             return (low, high, self.A[low])
         else:
             mid = (low + high) // 2
@@ -48,42 +48,47 @@ class CLRSSolution:
         low, high, _ = self._findMaxSubarray(0, len(self.A) - 1)
 
         return self.A[low:high + 1]
-    
+
     def findSum(self) -> int:
         _, _, sum = self._findMaxSubarray(0, len(self.A) - 1)
 
         return sum
 
+
 class KadaneSolution:
     def __init__(self, A: List):
         self.A = A
 
-    def find(self) -> List:
-        best_start = best_end = None
-        current_start = current_end = None
-        best_sum = current_sum = -inf
+    def _findMaxSubarray(self, low: int, high: int) -> List:
+        best_low = best_high = None
+        best_sum = sum = -inf
 
-        for current_end, x in enumerate(self.A):
-            if current_sum <= 0:
-                current_start = current_end
-                current_sum = x
+        for i in range(low, high+1):
+            if sum <= 0:
+                low = i
+                sum = self.A[i]
             else:
-                current_sum += x
+                sum += self.A[i]
 
-            if current_sum > best_sum:
-                best_sum = current_sum
-                best_start = current_start
-                best_end = current_end + 1
+            if sum > best_sum:
+                best_sum = sum
+                best_low = low
+                best_high = i
 
-        return self.A[best_start:best_end]
+        return best_low, best_high, best_sum
+
+    def find(self) -> List:
+        low, high, _ = self._findMaxSubarray(0, len(self.A) - 1)
+
+        return self.A[low:high + 1]
 
     def findSum(self) -> int:
         best_sum = -inf
-        current_sum = 0
+        sum = 0
 
-        for x in self.A:
-            current_sum = max(x, current_sum + x)
-            best_sum = max(best_sum, current_sum)
+        for i in self.A:
+            sum = max(i, sum + i)
+            best_sum = max(best_sum, sum)
 
         return best_sum
 
