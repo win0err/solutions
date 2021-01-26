@@ -12,6 +12,7 @@
 0175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | [MySQL](databases/combine-two-tables.sql) | — | — | Easy
 0177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | [MySQL](databases/nth-highest-salary.sql) | — | — | Medium
 0182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | [MySQL](databases/duplicate-emails.sql) | — | — | Easy
+0197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [MySQL](databases/rising-temperature.sql) | — | — | Easy
 0262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](databases/trips-and-users.sql) | — | — | Hard
 0268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [Python](algorithms/missing-number.py) | _O(n)_ | _O(1)_ | Algorithms, Easy, Bit Manipulation, Math
 0595 | [Big Countries](https://leetcode.com/problems/big-countries/) | [MySQL](databases/big-countries.sql) | — | — | Easy
