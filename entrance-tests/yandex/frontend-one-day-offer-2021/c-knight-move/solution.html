@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Knight Move</title>
+        <style>
+            html, 
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .board {
+                display: inline-grid;
+                grid-template-columns: repeat(8, 30px);
+                grid-template-rows: repeat(8, 30px);
+                overflow: hidden;
+            }
+
+            .cell {
+                position: relative;
+                appearance: none;
+                margin: 0;
+                background-color: #745853;
+                outline: none;
+            }
+
+            .cell:nth-child(16n-15),
+            .cell:nth-child(16n-6),
+            .cell:nth-child(16n-13),
+            .cell:nth-child(16n-4),
+            .cell:nth-child(16n-11),
+            .cell:nth-child(16n-2),
+            .cell:nth-child(16n-9),
+            .cell:nth-child(16n) {
+                background-color: #f4cd8d;
+            }
+
+            .cell:checked {
+                z-index: 10;
+                background-color: #ff0000;
+                
+                box-shadow: -30px -60px 0 0 #0000FF,
+                            -60px -30px 0 0 #0000FF,
+                            30px -60px 0 0 #0000FF,
+                            60px -30px 0 0 #0000FF,
+                            -30px 60px 0 0 #0000FF,
+                            -60px 30px 0 0 #0000FF,
+                            30px 60px 0 0 #0000FF,
+                            60px 30px 0 0 #0000FF;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="board">
+            <input type="radio" class="cell" id="a8" name="field" />
+            <input type="radio" class="cell" id="b8" name="field" />
+            <input type="radio" class="cell" id="c8" name="field" />
+            <input type="radio" class="cell" id="d8" name="field" />
+            <input type="radio" class="cell" id="e8" name="field" />
+            <input type="radio" class="cell" id="f8" name="field" />
+            <input type="radio" class="cell" id="g8" name="field" />
+            <input type="radio" class="cell" id="h8" name="field" />
+
+            <input type="radio" class="cell" id="a7" name="field" />
+            <input type="radio" class="cell" id="b7" name="field" />
+            <input type="radio" class="cell" id="c7" name="field" />
+            <input type="radio" class="cell" id="d7" name="field" />
+            <input type="radio" class="cell" id="e7" name="field" />
+            <input type="radio" class="cell" id="f7" name="field" />
+            <input type="radio" class="cell" id="g7" name="field" />
+            <input type="radio" class="cell" id="h7" name="field" />
+
+            <input type="radio" class="cell" id="a6" name="field" />
+            <input type="radio" class="cell" id="b6" name="field" />
+            <input type="radio" class="cell" id="c6" name="field" />
+            <input type="radio" class="cell" id="d6" name="field" />
+            <input type="radio" class="cell" id="e6" name="field" />
+            <input type="radio" class="cell" id="f6" name="field" />
+            <input type="radio" class="cell" id="g6" name="field" />
+            <input type="radio" class="cell" id="h6" name="field" />
+
+            <input type="radio" class="cell" id="a5" name="field" />
+            <input type="radio" class="cell" id="b5" name="field" />
+            <input type="radio" class="cell" id="c5" name="field" />
+            <input type="radio" class="cell" id="d5" name="field" />
+            <input type="radio" class="cell" id="e5" name="field" />
+            <input type="radio" class="cell" id="f5" name="field" />
+            <input type="radio" class="cell" id="g5" name="field" />
+            <input type="radio" class="cell" id="h5" name="field" />
+
+            <input type="radio" class="cell" id="a4" name="field" />
+            <input type="radio" class="cell" id="b4" name="field" />
+            <input type="radio" class="cell" id="c4" name="field" />
+            <input type="radio" class="cell" id="d4" name="field" />
+            <input type="radio" class="cell" id="e4" name="field" />
+            <input type="radio" class="cell" id="f4" name="field" />
+            <input type="radio" class="cell" id="g4" name="field" />
+            <input type="radio" class="cell" id="h4" name="field" />
+
+            <input type="radio" class="cell" id="a3" name="field" />
+            <input type="radio" class="cell" id="b3" name="field" />
+            <input type="radio" class="cell" id="c3" name="field" />
+            <input type="radio" class="cell" id="d3" name="field" />
+            <input type="radio" class="cell" id="e3" name="field" />
+            <input type="radio" class="cell" id="f3" name="field" />
+            <input type="radio" class="cell" id="g3" name="field" />
+            <input type="radio" class="cell" id="h3" name="field" />
+
+            <input type="radio" class="cell" id="a2" name="field" />
+            <input type="radio" class="cell" id="b2" name="field" />
+            <input type="radio" class="cell" id="c2" name="field" />
+            <input type="radio" class="cell" id="d2" name="field" />
+            <input type="radio" class="cell" id="e2" name="field" />
+            <input type="radio" class="cell" id="f2" name="field" />
+            <input type="radio" class="cell" id="g2" name="field" />
+            <input type="radio" class="cell" id="h2" name="field" />
+
+            <input type="radio" class="cell" id="a1" name="field" />
+            <input type="radio" class="cell" id="b1" name="field" />
+            <input type="radio" class="cell" id="c1" name="field" />
+            <input type="radio" class="cell" id="d1" name="field" />
+            <input type="radio" class="cell" id="e1" name="field" />
+            <input type="radio" class="cell" id="f1" name="field" />
+            <input type="radio" class="cell" id="g1" name="field" />
+            <input type="radio" class="cell" id="h1" name="field" />
+        </div>
+    </body>
+</html>
