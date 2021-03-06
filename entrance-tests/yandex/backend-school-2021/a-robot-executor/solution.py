@@ -7,8 +7,7 @@ class Robot:
         return self._path[-1]
 
     def move(self, path):
-        for direction in path:
-            direction = direction.upper()
+        for direction in path.upper():
             (x, y) = self.position
 
             if direction == 'N' and y != 100:
