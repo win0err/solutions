@@ -13,13 +13,10 @@ statement = "SELECT condition FROM Talks"
 if len(conditions) > 0:
     statement += " WHERE " + " AND ".join(conditions)
 
-statement += " ORDER BY %s ASC" % order_by 
+statement += f" ORDER BY {order_by} ASC"
 cur.execute(statement)
 
-while True:
-    row = cur.fetchone()
-    if row == None:
-        break
+for row in cur.fetchall():
     print(*row)
 
 con.close()
