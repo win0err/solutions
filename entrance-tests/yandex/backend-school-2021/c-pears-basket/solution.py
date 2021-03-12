@@ -1,5 +1,5 @@
 class PearsBasket:
-    def __init__(self, count):
+    def __init__(self, count=0):
         self.count = count
 
     def __add__(self, other):
