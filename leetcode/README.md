@@ -11,6 +11,7 @@
 0137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [Python](algorithms/single-number-ii.py) | _O(n)_ | _O(n)_ — hash map | Algorithms, Medium, Bit Manipulation, Hash Map
 0175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | [MySQL](databases/combine-two-tables.sql) | — | — | Easy
 0177 | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/) | [MySQL](databases/nth-highest-salary.sql) | — | — | Medium
+0178 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | [MySQL](databases/rank-scores.sql) | — | — | Medium
 0180 | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | [MySQL](databases/consecutive-numbers.sql) | — | — | Medium
 0182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | [MySQL](databases/duplicate-emails.sql) | — | — | Easy
 0197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [MySQL](databases/rising-temperature.sql) | — | — | Easy
