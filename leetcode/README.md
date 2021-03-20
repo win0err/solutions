@@ -14,6 +14,7 @@
 0178 | [Rank Scores](https://leetcode.com/problems/rank-scores/) | [MySQL](databases/rank-scores.sql) | — | — | Medium
 0180 | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/) | [MySQL](databases/consecutive-numbers.sql) | — | — | Medium
 0182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/) | [MySQL](databases/duplicate-emails.sql) | — | — | Easy
+0184 | [Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | [MySQL](databases/department-highest-salary.sql) | — | — | Medium
 0197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [MySQL](databases/rising-temperature.sql) | — | — | Easy
 0262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](databases/trips-and-users.sql) | — | — | Hard
 0268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [Python](algorithms/missing-number.py) | _O(n)_ | _O(1)_ | Algorithms, Easy, Bit Manipulation, Math
