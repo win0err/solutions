@@ -1,6 +1,6 @@
 const parseInput = input => {
   let [template, rules] = input.split('\n\n')
-  
+
   rules = rules
     .split('\n')
     .reduce(
@@ -23,8 +23,8 @@ const cached = (fn) => {
   const cache = {}
 
   return (...args) => {
-    const hash = args.join('_')
-    
+    const hash = JSON.stringify(args)
+
     if (!cache[hash]) {
       cache[hash] = fn(...args)
     }
@@ -62,19 +62,19 @@ const mergeCounters = (counter1, counter2) => {
 const solve = (initialTemplate, rules, totalIterations) => {
   const count = cached((template, iterations) => {
     let counter = createCounter()
-  
+
     if (iterations > 0) {
       for (const pair of createPairs(template)) {
         const middleChar = rules[pair][1]
         counter[middleChar] += 1
-        
+
         counter = mergeCounters(
           counter,
           count(rules[pair], iterations - 1)
         )
       }
     }
-  
+
     return counter
   })
 
