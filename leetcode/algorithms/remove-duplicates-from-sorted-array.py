@@ -2,13 +2,10 @@ from typing import List
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        if len(nums) == 0: 
-            return 0
+        last_uniq_idx = 0
+        for idx in range(1, len(nums)):
+            if nums[last_uniq_idx] != nums[idx]:
+                last_uniq_idx += 1
+                nums[last_uniq_idx] = nums[idx]
 
-        i = 0
-        for j in range(1, len(nums)):
-            if nums[i] != nums[j]:
-                i += 1
-                nums[i] = nums[j]
-
-        return i + 1
+        return last_uniq_idx + 1
