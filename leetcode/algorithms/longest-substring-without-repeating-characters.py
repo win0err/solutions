@@ -8,7 +8,7 @@ class Solution:
                 start_pos = found[char]
             else:
                 max_length = max(max_length, pos - start_pos)
-                
+
             found[char] = pos
-        
+
         return max_length

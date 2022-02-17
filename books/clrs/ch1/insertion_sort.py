@@ -2,6 +2,7 @@
 import operator
 from typing import List
 
+
 def insertion_sort(a: List, compare=operator.gt) -> List:
     """Insertion sort algorithm"""
     for j in range(1, len(a)):
@@ -15,11 +16,8 @@ def insertion_sort(a: List, compare=operator.gt) -> List:
 
     return a
 
+
 if __name__ == "__main__":
     ints = [-2, 99, 0, -743, 2, 3, 4]
 
-    print(
-        insertion_sort(ints),
-        insertion_sort(ints, operator.lt),
-        sep='\n'
-    )
+    print(insertion_sort(ints), insertion_sort(ints, operator.lt), sep="\n")

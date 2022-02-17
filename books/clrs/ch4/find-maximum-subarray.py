@@ -2,11 +2,14 @@
 from typing import List
 from math import inf
 
+
 class CLRSSolution:
     def __init__(self, A: List):
         self.A = A
 
-    def _findMaxCrossingSubarray(self, low: int, mid: int, high: int) -> (int, int, int):
+    def _findMaxCrossingSubarray(
+        self, low: int, mid: int, high: int
+    ) -> (int, int, int):
         max_left = max_right = None
 
         left_sum = -inf
@@ -35,7 +38,9 @@ class CLRSSolution:
 
             left_low, left_high, left_sum = self._findMaxSubarray(low, mid)
             right_low, right_high, right_sum = self._findMaxSubarray(mid, high)
-            cross_low, cross_high, cross_sum = self._findMaxCrossingSubarray(low, mid, high)
+            cross_low, cross_high, cross_sum = self._findMaxCrossingSubarray(
+                low, mid, high
+            )
 
             if left_sum >= right_sum and left_sum >= cross_sum:
                 return left_low, left_high, left_sum

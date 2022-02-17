@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from typing import List
 
+
 def merge_sort(A: List) -> List:
     """Merge sort algorithm"""
     if len(A) > 1:
@@ -13,7 +14,7 @@ def merge_sort(A: List) -> List:
         merge_sort(R)
 
         i = j = k = 0
-        
+
         while i < n1 and j < n2:
             if L[i] <= R[j]:
                 A[k] = L[i]
@@ -34,6 +35,7 @@ def merge_sort(A: List) -> List:
             k += 1
 
     return A
+
 
 if __name__ == "__main__":
     ints = [-2, 99, 0, -743, 2, 3, 4]
