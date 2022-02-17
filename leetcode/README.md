@@ -7,7 +7,7 @@
 0002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [PHP](algorithms/add-two-numbers.php) |  _O(n)_ | _O(1)_ | Algorithms, Medium, Linked List
 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Python](algorithms/longest-substring-without-repeating-characters.py) |  _O(n)_ | _O(1)_ | Algorithms, Medium, Hash Table, Two Pointers, String, Sliding Window
 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | [Python](algorithms/remove-duplicates-from-sorted-array.py), [JS](algorithms/remove-duplicates-from-sorted-array.js)  | _O(n)_ | _O(1)_ | Algorithms, Easy, Array
-0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Python](algorithms/maximum-subarray.py) | _O(n)_| _O(1)_ | Algorithms, Array, Dynamic Programming
+0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Python](algorithms/maximum-subarray.py) | _O(n)_ — Kadane<br>_O(n×logn)_ — D&Q  | _O(1)_ | Algorithms, Array, Dynamic Programming
 0056 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [JS](algorithms/merge-intervals.js) | _O(n×logn)_ — sort | _O(n)_ | Algorithms, Medium, Array, Sorting
 0136 | [Single Number](https://leetcode.com/problems/single-number/) | [Python](algorithms/single-number.py) | _O(n)_ | _O(1)_ — bits<br>_O(n)_ — math | Algorithms, Easy, Bit Manipulation, Math
 0137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [Python](algorithms/single-number-ii.py) | _O(n)_ | _O(n)_ — hash map | Algorithms, Medium, Bit Manipulation, Hash Map
