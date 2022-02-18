@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from typing import List
+from typing import List, Tuple
 from math import inf
 
 
@@ -9,7 +9,7 @@ class CLRSSolution:
 
     def _findMaxCrossingSubarray(
         self, low: int, mid: int, high: int
-    ) -> (int, int, int):
+    ) -> Tuple[int, int, int]:
         max_left = max_right = None
 
         left_sum = -inf
@@ -30,7 +30,7 @@ class CLRSSolution:
 
         return max_left, max_right + 1, left_sum + right_sum
 
-    def _findMaxSubarray(self, low: int, high: int) -> (int, int, int):
+    def _findMaxSubarray(self, low: int, high: int) -> Tuple[int, int, int]:
         if low >= high - 1:
             return (low, high, self.A[low])
         else:
@@ -64,7 +64,7 @@ class KadaneSolution:
     def __init__(self, A: List):
         self.A = A
 
-    def _findMaxSubarray(self, low: int, high: int) -> (int, int, int):
+    def _findMaxSubarray(self, low: int, high: int) -> Tuple[int, int, int]:
         best_low = best_high = None
         best_sum = sum = -inf
 
