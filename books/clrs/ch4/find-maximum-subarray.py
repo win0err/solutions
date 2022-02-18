@@ -1,9 +1,49 @@
 #!/usr/bin/env python3
-from typing import List, Tuple
+from abc import ABC, abstractmethod
 from math import inf
+from typing import List, Tuple
 
 
-class CLRSSolution:
+class Solution(ABC):
+    @abstractmethod
+    def find(self) -> List:
+        pass
+
+    @abstractmethod
+    def findSum(self) -> int:
+        pass
+
+
+class BruteForce(Solution):
+    def __init__(self, A: List):
+        self.A = A
+
+    def _findMaxSubarray(self) -> Tuple[int, int, int]:
+        n = len(self.A)
+        max_sum = -inf
+        for l in range(0, n):
+            sum = 0
+            for h in range(l, n):
+                sum += A[h]
+                if sum > max_sum:
+                    max_sum = sum
+                    low = l
+                    high = h
+
+        return low, high + 1, max_sum
+
+    def find(self) -> List:
+        low, high, _ = self._findMaxSubarray()
+
+        return self.A[low:high]
+
+    def findSum(self) -> int:
+        _, _, sum = self._findMaxSubarray()
+
+        return sum
+
+
+class DivideAndConquer(Solution):
     def __init__(self, A: List):
         self.A = A
 
@@ -60,7 +100,7 @@ class CLRSSolution:
         return sum
 
 
-class KadaneSolution:
+class Kadane(Solution):
     def __init__(self, A: List):
         self.A = A
 
@@ -101,8 +141,9 @@ class KadaneSolution:
 if __name__ == "__main__":
     A = (13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7)
 
-    clrs = CLRSSolution(A)
-    kadane = KadaneSolution(A)
+    for solution in [BruteForce, DivideAndConquer, Kadane]:
+        s = solution(A)
+        subarray = s.find()
+        sum = s.findSum()
 
-    print(clrs.find(), clrs.findSum())
-    print(kadane.find(), kadane.findSum())
+        print(f"{s.__class__.__name__}: {' + '.join(map(str, subarray))} = {sum}")
