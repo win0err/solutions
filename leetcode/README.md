@@ -21,6 +21,7 @@
 0197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [MySQL](databases/rising-temperature.sql) | — | — | Easy
 0262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](databases/trips-and-users.sql) | — | — | Hard
 0268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [Python](algorithms/missing-number.py) | _O(n)_ | _O(1)_ | Algorithms, Easy, Bit Manipulation, Math
+0374 | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | [JS](algorithms/guess-number-higher-or-lower.js) | _O(log_2 n)_ | _O(1)_ | Algorithms, Easy, Binary Search
 0595 | [Big Countries](https://leetcode.com/problems/big-countries/) | [MySQL](databases/big-countries.sql) | — | — | Easy
 0620 | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/) | [MySQL](databases/not-boring-movies.sql) | — | — | Easy
 0627 | [Swap Salary](https://leetcode.com/problems/swap-salary/) | [MySQL](databases/swap-salary.sql) | — | — | Easy
