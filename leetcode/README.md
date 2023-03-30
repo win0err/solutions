@@ -20,7 +20,8 @@
 0184 | [Department Highest Salary](https://leetcode.com/problems/department-highest-salary/) | [MySQL](databases/department-highest-salary.sql) | — | — | Medium
 0185 | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/) | [MySQL](databases/department-top-three-salaries.sql) | — | — | Hard
 0197 | [Rising Temperature](https://leetcode.com/problems/rising-temperature/) | [MySQL](databases/rising-temperature.sql) | — | — | Easy
-0211 | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |[JS](algorithms/design-add-and-search-words-data-structure.js) | _O(N)_ | _O(N)_ — best<br>_O(Alphabet^N)_ — worst | String, DFS, Design, Trie
+0200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) |[JS](algorithms/number-of-islands.js) | _O(R×C)_ | _O(R×C)_ | Medium, Array, DFS, BFS, Graph Component
+0211 | [Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |[JS](algorithms/design-add-and-search-words-data-structure.js) | _O(N)_ | _O(N)_ — best<br>_O(Alphabet^N)_ — worst | Medium, String, DFS, Design, Trie
 0262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](databases/trips-and-users.sql) | — | — | Hard
 0268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [Python](algorithms/missing-number.py) | _O(n)_ | _O(1)_ | Algorithms, Easy, Bit Manipulation, Math
 0374 | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | [JS](algorithms/guess-number-higher-or-lower.js) | _O(log_2 n)_ | _O(1)_ | Algorithms, Easy, Binary Search
