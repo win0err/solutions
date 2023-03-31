@@ -4,9 +4,7 @@ const isSymmetric = ({ left, right }) => {
 	while (queue.length > 0) {
 		const [l, r] = queue.shift()
 
-		if (!l && !r)
-			continue
-
+		if (!l && !r) continue
 		if (l?.val !== r?.val)
 			return false
 
