@@ -10,6 +10,7 @@
 0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Python](algorithms/maximum-subarray.py) | _O(n)_ — Kadane<br>_O(n×logn)_ — D&C  | _O(1)_ | Algorithms, Array, Dynamic Programming
 0056 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | [JS](algorithms/merge-intervals.js) | _O(n×logn)_ — sort | _O(n)_ | Algorithms, Medium, Array, Sorting
 0074 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) | [JS](algorithms/search-a-2d-matrix.js) | _O(log(m×n))_ | _O(n)_ | Algorithms, Medium, Array, Binary Search, Matrix
+0100 | [Same Tree](https://leetcode.com/problems/same-tree/) | [JS](algorithms/same-tree.js) | _O(n)_ | _O(n)_ | Algorithms, Easy, BFS, DFS, Tree, Binary Tree
 0136 | [Single Number](https://leetcode.com/problems/single-number/) | [Python](algorithms/single-number.py) | _O(n)_ | _O(1)_ — bits<br>_O(n)_ — math | Algorithms, Easy, Bit Manipulation, Math
 0137 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | [Python](algorithms/single-number-ii.py) | _O(n)_ | _O(n)_ — hash map | Algorithms, Medium, Bit Manipulation, Hash Map
 0175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | [MySQL](databases/combine-two-tables.sql) | — | — | Easy
