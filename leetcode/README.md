@@ -32,6 +32,7 @@
 0620 | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/) | [MySQL](databases/not-boring-movies.sql) | — | — | Easy
 0627 | [Swap Salary](https://leetcode.com/problems/swap-salary/) | [MySQL](databases/swap-salary.sql) | — | — | Easy
 0704 | [Binary Search](https://leetcode.com/problems/binary-search/) | [JS](algorithms/binary-search.js) | _O(log n)_ | _O(1)_ | Algorithms, Easy, Array, Binary Search
+0763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [JS](algorithms/partition-labels.js) | _O(N)_ | _O(1)_ | Algorithms, Medium, Hash Table, Two Pointers, String, Greedy
 0867 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix) | [PHP](algorithms/transpose-matrix.php) | _O(R×C)_ | _O(R×C)_ | Algorithms, Easy, Array
 1431 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | [Python](algorithms/kids-with-the-greatest-number-of-candies.py)<br>[PHP](algorithms/kids-with-the-greatest-number-of-candies.php) | _O(N)_ | _O(1)_ | Algorithms, Easy, Array
 
