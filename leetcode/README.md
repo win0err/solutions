@@ -35,6 +35,7 @@
 0763 | [Partition Labels](https://leetcode.com/problems/partition-labels/) | [JS](algorithms/partition-labels.js) | _O(N)_ | _O(1)_ | Algorithms, Medium, Hash Table, Two Pointers, String, Greedy
 0867 | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix) | [PHP](algorithms/transpose-matrix.php) | _O(R×C)_ | _O(R×C)_ | Algorithms, Easy, Array
 1431 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies) | [Python](algorithms/kids-with-the-greatest-number-of-candies.py)<br>[PHP](algorithms/kids-with-the-greatest-number-of-candies.php) | _O(N)_ | _O(1)_ | Algorithms, Easy, Array
+2405 | [Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/) | [JS](algorithms/optimal-partition-of-string.js) | _O(N)_ | _O(1)_ | Algorithms, Medium, Hash Table, String, Greedy
 
 ---
 _Solved by [Sergei Kolesnikov](https://github.com/win0err)_
