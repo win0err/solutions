@@ -4,7 +4,7 @@
 №    | Problem | Solutions | Time | Space | Tags
 ---: | ------- | --------- | ---- | ----- | ----
 0001 | [Two Sum](https://leetcode.com/problems/two-sum) | [PHP](algorithms/two-sum.php), [JS](algorithms/two-sum.js) | _O(n)_ | _O(n)_ | Algorithms, Easy, Hash Table
-0002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [PHP](algorithms/add-two-numbers.php) |  _O(n)_ | _O(1)_ | Algorithms, Medium, Linked List
+0002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers) | [JS](algorithms/add-two-numbers.js), [PHP](algorithms/add-two-numbers.php) |  _O(max(n, m))_ | _O(max(n, m))_ | Algorithms, Medium, Linked List
 0003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters) | [Python](algorithms/longest-substring-without-repeating-characters.py) |  _O(n)_ | _O(1)_ | Algorithms, Medium, Hash Table, Two Pointers, String, Sliding Window
 0011 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | [JS](algorithms/container-with-most-water.js) |  _O(n)_ | _O(1)_ | Algorithms, Medium, Array, Two Pointers, Greedy
 0026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | [Python](algorithms/remove-duplicates-from-sorted-array.py), [JS](algorithms/remove-duplicates-from-sorted-array.js)  | _O(n)_ | _O(1)_ | Algorithms, Easy, Array
@@ -28,6 +28,7 @@
 0262 | [Trips and Users](https://leetcode.com/problems/trips-and-users/) | [MySQL](databases/trips-and-users.sql) | — | — | Hard
 0268 | [Missing Number](https://leetcode.com/problems/missing-number/) | [Python](algorithms/missing-number.py) | _O(n)_ | _O(1)_ | Algorithms, Easy, Bit Manipulation, Math
 0374 | [Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) | [JS](algorithms/guess-number-higher-or-lower.js) | _O(log_2 n)_ | _O(1)_ | Algorithms, Easy, Binary Search
+0445 | [Add Two Numbers II](https://leetcode.com/problems/add-two-numbers-ii/) | [JS](algorithms/add-two-numbers-ii.js) |  _O(n+m)_ | _O(n+m)_ | Algorithms, Medium, Linked List, Math, Stack
 0595 | [Big Countries](https://leetcode.com/problems/big-countries/) | [MySQL](databases/big-countries.sql) | — | — | Easy
 0620 | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/) | [MySQL](databases/not-boring-movies.sql) | — | — | Easy
 0627 | [Swap Salary](https://leetcode.com/problems/swap-salary/) | [MySQL](databases/swap-salary.sql) | — | — | Easy
