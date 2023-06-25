@@ -13,6 +13,6 @@ const insertionSort = (list) => {
 
 
 const list = [-2, 99, 0, -743, 2, 3, 4]
-sort(list)
+insertionSort(list)
 
 console.log(JSON.stringify(list))
