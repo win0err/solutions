@@ -4,8 +4,8 @@ const mergeSort = (list) => {
     const mid = Math.floor(list.length/2)
 
     // in-place sort in merge_sort.c
-    const left = sort(list.slice(0, mid))
-    const right = sort(list.slice(mid, list.length))
+    const left = mergeSort(list.slice(0, mid))
+    const right = mergeSort(list.slice(mid, list.length))
 
     let i = 0, l = 0, r = 0
     while (l < left.length && r < right.length) {
@@ -37,6 +37,6 @@ const mergeSort = (list) => {
 
 
 const list = [-2, 99, 0, -743, 2, 3, 4]
-sort(list)
+mergeSort(list)
 
 console.log(JSON.stringify(list))
