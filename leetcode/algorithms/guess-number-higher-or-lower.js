@@ -6,7 +6,7 @@ const guessNumber = (n) => {
 
     while(true) {
         mid = min + Math.ceil((max - min) / 2)
-        
+
         switch (guess(mid)) {
             case -1:  // mid > pick
                 max = mid - 1
@@ -14,7 +14,7 @@ const guessNumber = (n) => {
             case 1:  // mid < pick
                 min = mid + 1
                 break
-            case 0: 
+            case 0:
                 return mid
         }
     }
