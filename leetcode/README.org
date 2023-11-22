@@ -33,6 +33,7 @@
 |  595 | [[https://leetcode.com/problems/big-countries/][Big Countries]]                                  | [[databases/big-countries.sql][MySQL]]       |
 |  620 | [[https://leetcode.com/problems/not-boring-movies/][Not Boring Movies]]                              | [[databases/not-boring-movies.sql][MySQL]]       |
 |  627 | [[https://leetcode.com/problems/swap-salary/][Swap Salary]]                                    | [[databases/swap-salary.sql][MySQL]]       |
+|  652 | [[https://leetcode.com/problems/find-duplicate-subtrees/][Find Duplicate Subtrees]]                        | [[file:algorithms/find-duplicate-subtrees.ts][TS]]          |
 |  704 | [[https://leetcode.com/problems/binary-search/][Binary Search]]                                  | [[file:algorithms/binary-search.js][JS]]          |
 |  763 | [[https://leetcode.com/problems/partition-labels/][Partition Labels]]                               | [[file:algorithms/partition-labels.js][JS]]          |
 |  867 | [[https://leetcode.com/problems/transpose-matrix][Transpose Matrix]]                               | [[file:algorithms/transpose-matrix.php][PHP]]         |
