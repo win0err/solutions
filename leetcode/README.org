@@ -1,0 +1,40 @@
+* [[https://leetcode.com/problemset/all/][LeetCode]] solutions
+
+** Problems
+|    № | Problem                                        | Solutions   |
+| ---: | ---------------------------------------------- | ----------- |
+|    1 | [[https://leetcode.com/problems/two-sum][Two Sum]]                                        | [[file:algorithms/two-sum.js][JS]], [[file:algorithms/two-sum.php][PHP]]     |
+|    2 | [[https://leetcode.com/problems/add-two-numbers][Add Two Numbers]]                                | [[file:algorithms/add-two-numbers.js][JS]], [[file:algorithms/add-two-numbers.php][PHP]]     |
+|    3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters][Longest Substring Without Repeating Characters]] | [[file:algorithms/longest-substring-without-repeating-characters.py][Python]]      |
+|   11 | [[https://leetcode.com/problems/container-with-most-water/][Container With Most Water]]                      | [[file:algorithms/container-with-most-water.js][JS]]          |
+|   26 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-array][Remove Duplicates from Sorted Array]]            | [[file:algorithms/remove-duplicates-from-sorted-array.py][Python]], [[file:algorithms/remove-duplicates-from-sorted-array.js][JS]]  |
+|   53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum Subarray]]                               | [[file:algorithms/maximum-subarray.py][Python]]      |
+|   56 | [[https://leetcode.com/problems/merge-intervals/][Merge Intervals]]                                | [[file:algorithms/merge-intervals.js][JS]]          |
+|   74 | [[https://leetcode.com/problems/search-a-2d-matrix/][Search a 2D Matrix]]                             | [[file:algorithms/search-a-2d-matrix.js][JS]]          |
+|  100 | [[https://leetcode.com/problems/same-tree/][Same Tree]]                                      | [[file:algorithms/same-tree.js][JS]]          |
+|  101 | [[https://leetcode.com/problems/symmetric-tree/][Symmetric Tree]]                                 | [[file:algorithms/symmetric-tree.js][JS]]          |
+|  136 | [[https://leetcode.com/problems/single-number/][Single Number]]                                  | [[file:algorithms/single-number.py][Python]]      |
+|  137 | [[https://leetcode.com/problems/single-number-ii/][Single Number II]]                               | [[file:algorithms/single-number-ii.py][Python]]      |
+|  175 | [[https://leetcode.com/problems/combine-two-tables/][Combine Two Tables]]                             | [[databases/combine-two-tables.sql][MySQL]]       |
+|  177 | [[https://leetcode.com/problems/nth-highest-salary/][Nth Highest Salary]]                             | [[databases/nth-highest-salary.sql][MySQL]]       |
+|  178 | [[https://leetcode.com/problems/rank-scores/][Rank Scores]]                                    | [[databases/rank-scores.sql][MySQL]]       |
+|  180 | [[https://leetcode.com/problems/consecutive-numbers/][Consecutive Numbers]]                            | [[databases/consecutive-numbers.sql][MySQL]]       |
+|  182 | [[https://leetcode.com/problems/duplicate-emails/][Duplicate Emails]]                               | [[databases/duplicate-emails.sql][MySQL]]       |
+|  184 | [[https://leetcode.com/problems/department-highest-salary/][Department Highest Salary]]                      | [[databases/department-highest-salary.sql][MySQL]]       |
+|  185 | [[https://leetcode.com/problems/department-top-three-salaries/][Department Top Three Salaries]]                  | [[databases/department-top-three-salaries.sql][MySQL]]       |
+|  197 | [[https://leetcode.com/problems/rising-temperature/][Rising Temperature]]                             | [[databases/rising-temperature.sql][MySQL]]       |
+|  200 | [[https://leetcode.com/problems/number-of-islands/][Number of Islands]]                              | [[file:algorithms/number-of-islands.js][JS]]          |
+|  211 | [[https://leetcode.com/problems/design-add-and-search-words-data-structure/][Design Add and Search Words Data Structure]]     | [[file:algorithms/design-add-and-search-words-data-structure.js][JS]]          |
+|  262 | [[https://leetcode.com/problems/trips-and-users/][Trips and Users]]                                | [[databases/trips-and-users.sql][MySQL]]       |
+|  268 | [[https://leetcode.com/problems/missing-number/][Missing Number]]                                 | [[file:algorithms/missing-number.py][Python]]      |
+|  374 | [[https://leetcode.com/problems/guess-number-higher-or-lower/][Guess Number Higher or Lower]]                   | [[file:algorithms/guess-number-higher-or-lower.js][JS]]          |
+|  445 | [[https://leetcode.com/problems/add-two-numbers-ii/][Add Two Numbers II]]                             | [[file:algorithms/add-two-numbers-ii.js][JS]]          |
+|  529 | [[https://leetcode.com/problems/minesweeper/][Minesweeper]]                                    | [[file:algorithms/minesweeper.js][JS]]          |
+|  595 | [[https://leetcode.com/problems/big-countries/][Big Countries]]                                  | [[databases/big-countries.sql][MySQL]]       |
+|  620 | [[https://leetcode.com/problems/not-boring-movies/][Not Boring Movies]]                              | [[databases/not-boring-movies.sql][MySQL]]       |
+|  627 | [[https://leetcode.com/problems/swap-salary/][Swap Salary]]                                    | [[databases/swap-salary.sql][MySQL]]       |
+|  704 | [[https://leetcode.com/problems/binary-search/][Binary Search]]                                  | [[file:algorithms/binary-search.js][JS]]          |
+|  763 | [[https://leetcode.com/problems/partition-labels/][Partition Labels]]                               | [[file:algorithms/partition-labels.js][JS]]          |
+|  867 | [[https://leetcode.com/problems/transpose-matrix][Transpose Matrix]]                               | [[file:algorithms/transpose-matrix.php][PHP]]         |
+| 1431 | [[https://leetcode.com/problems/kids-with-the-greatest-number-of-candies][Kids With the Greatest Number of Candies]]       | [[file:algorithms/kids-with-the-greatest-number-of-candies.py][Python]], [[file:algorithms/kids-with-the-greatest-number-of-candies.php][PHP]] |
+| 2405 | [[https://leetcode.com/problems/optimal-partition-of-string/][Optimal Partition of String]]                    | [[file:algorithms/optimal-partition-of-string.js][JS]]          |

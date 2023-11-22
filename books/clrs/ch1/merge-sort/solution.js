@@ -3,7 +3,6 @@ const mergeSort = (list) => {
 
     const mid = Math.floor(list.length/2)
 
-    // in-place sort in merge_sort.c
     const left = mergeSort(list.slice(0, mid))
     const right = mergeSort(list.slice(mid, list.length))
 

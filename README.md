@@ -1,6 +1,6 @@
 # Solutions to different problems in various languages
 
-Solutions for problems from: 
+Solutions for problems from:
 - websites like LeetCode, HackerRank;
 - books like K&R C, CRLS, etc.
 
