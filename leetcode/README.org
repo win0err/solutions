@@ -31,6 +31,7 @@
 |  374 | [[https://leetcode.com/problems/guess-number-higher-or-lower/][Guess Number Higher or Lower]]                   | [[file:algorithms/guess-number-higher-or-lower.js][JS]]          |
 |  445 | [[https://leetcode.com/problems/add-two-numbers-ii/][Add Two Numbers II]]                             | [[file:algorithms/add-two-numbers-ii.js][JS]]          |
 |  529 | [[https://leetcode.com/problems/minesweeper/][Minesweeper]]                                    | [[file:algorithms/minesweeper.js][JS]]          |
+|  547 | [[https://leetcode.com/problems/number-of-provinces/][Number of Provinces]]                            | [[file:algorithms/number-of-provinces.ts][TS]]          |
 |  595 | [[https://leetcode.com/problems/big-countries/][Big Countries]]                                  | [[databases/big-countries.sql][MySQL]]       |
 |  620 | [[https://leetcode.com/problems/not-boring-movies/][Not Boring Movies]]                              | [[databases/not-boring-movies.sql][MySQL]]       |
 |  627 | [[https://leetcode.com/problems/swap-salary/][Swap Salary]]                                    | [[databases/swap-salary.sql][MySQL]]       |
