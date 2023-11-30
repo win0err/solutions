@@ -12,6 +12,7 @@
 |   53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum Subarray]]                               | [[file:algorithms/maximum-subarray.py][Python]]      |
 |   56 | [[https://leetcode.com/problems/merge-intervals/][Merge Intervals]]                                | [[file:algorithms/merge-intervals.js][JS]]          |
 |   74 | [[https://leetcode.com/problems/search-a-2d-matrix/][Search a 2D Matrix]]                             | [[file:algorithms/search-a-2d-matrix.js][JS]]          |
+|   92 | [[https://leetcode.com/problems/reverse-linked-list-ii/][Reverse Linked List II]]                         | [[file:algorithms/reverse-linked-list-ii.ts][TS]]          |
 |  100 | [[https://leetcode.com/problems/same-tree/][Same Tree]]                                      | [[file:algorithms/same-tree.js][JS]]          |
 |  101 | [[https://leetcode.com/problems/symmetric-tree/][Symmetric Tree]]                                 | [[file:algorithms/symmetric-tree.js][JS]]          |
 |  136 | [[https://leetcode.com/problems/single-number/][Single Number]]                                  | [[file:algorithms/single-number.py][Python]]      |
