@@ -26,6 +26,7 @@
 |  185 | [[https://leetcode.com/problems/department-top-three-salaries/][Department Top Three Salaries]]                  | [[databases/department-top-three-salaries.sql][MySQL]]       |
 |  197 | [[https://leetcode.com/problems/rising-temperature/][Rising Temperature]]                             | [[databases/rising-temperature.sql][MySQL]]       |
 |  200 | [[https://leetcode.com/problems/number-of-islands/][Number of Islands]]                              | [[file:algorithms/number-of-islands.js][JS]]          |
+|  206 | [[https://leetcode.com/problems/reverse-linked-list/][Reverse Linked List]]                            | [[file:algorithms/reverse-linked-list.ts][TS]]          |
 |  211 | [[https://leetcode.com/problems/design-add-and-search-words-data-structure/][Design Add and Search Words Data Structure]]     | [[file:algorithms/design-add-and-search-words-data-structure.js][JS]]          |
 |  262 | [[https://leetcode.com/problems/trips-and-users/][Trips and Users]]                                | [[databases/trips-and-users.sql][MySQL]]       |
 |  268 | [[https://leetcode.com/problems/missing-number/][Missing Number]]                                 | [[file:algorithms/missing-number.py][Python]]      |
