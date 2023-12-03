@@ -1,5 +1,4 @@
 from collections import Counter
-from functools import reduce
 
 
 MAX_CAPACITY = Counter({'red': 12, 'green': 13, 'blue': 14})
@@ -16,33 +15,27 @@ def parse_input(filename):
             _, game = line.strip().split(': ')
             sets = game.split('; ')
 
-            game_results = []
+            best_set = Counter()
 
             for s in sets:
-                game_set = Counter({'red': 0, 'green': 0, 'blue': 0})
+                for v in s.split(', '):
+                    count, color = v.split(' ')
+                    best_set[color] = max(int(count), best_set[color])
 
-                for cube in s.split(', '):
-                    count, color = cube.split(' ')
-                    game_set[color] = int(count)
-
-                game_results.append(game_set)
-
-            games.append(game_results)
+            games.append(best_set)
 
     return games
 
 
 def solve_1(games):
     return sum(
-        game_id for game_id, game in enumerate(games, start=1)
-        if all(game_set <= MAX_CAPACITY for game_set in game)
+        game_id for game_id, best_set in enumerate(games, start=1)
+        if best_set <= MAX_CAPACITY
     )
 
 
 def solve_2(games):
-    selected_sets = [reduce(lambda a, b: a | b, sets) for sets in games]
-
-    return sum(game['red'] * game['green'] * game['blue'] for game in selected_sets)
+    return sum(s['red'] * s['green'] * s['blue'] for s in games)
 
 
 if __name__ == '__main__':
