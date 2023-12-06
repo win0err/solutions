@@ -19,7 +19,7 @@ def parse_input(filename):
 
             for s in sets:
                 for v in s.split(', '):
-                    count, color = v.split(' ')
+                    count, color = v.split()
                     best_set[color] = max(int(count), best_set[color])
 
             games.append(best_set)

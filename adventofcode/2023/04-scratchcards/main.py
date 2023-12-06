@@ -8,7 +8,7 @@ def parse_input(filename):
 
             _, numbers = line.strip().split(': ')
             numbers_have, numbers_win = map(
-                lambda nums: set(int(n) for n in nums.split(' ') if n != ''),
+                lambda nums: set(int(n) for n in nums.split()),
                 numbers.split(' | ')
             )
 
