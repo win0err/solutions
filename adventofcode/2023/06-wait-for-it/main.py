@@ -1,3 +1,6 @@
+import math
+
+
 def parse_input(filename, fix_kerning=False):
     with open(filename, 'r+') as f:
         times, distances = f.read().strip().splitlines()
@@ -25,9 +28,11 @@ def solve_1(races):
 
         for delay in range(1, distance):
             speed = delay
-            time = distance / speed + delay
 
-            if time < record:
+            # distance = speed * t
+            t = distance / speed
+
+            if t + delay < record:
                 options += 1
 
         result *= options
@@ -36,20 +41,35 @@ def solve_1(races):
 
 
 def solve_2(race):
-    record, distance = race
+    t, d = race
 
-    loses = 0
-    for delay in range(1, distance):
-        speed = delay
-        time = distance / speed + delay
+    # speed = delay
+    #
+    # distance = speed * t
+    # t = distance / speed (+ delay)
+    # t - delay = distance / speed
+    #
+    # distance = speed * (t - delay)
+    #
+    # x = speed = delay
+    #
+    # distance = x * (t - x)
+    # distance = x * t - x^2
+    #
+    # ax^2 + bx + c = 0
+    # x1 = (-b + sqrt(b^2 - 4ac)) / 2a
+    # x2 = (-b - sqrt(b^2 - 4ac)) / 2a
+    #
+    # x^2 - t * x + distance = 0
+    # x1 = (t - sqrt(t^2 - 4 * distance) / 2
+    # x2 = (t + sqrt(t^2 - 4 * distance) / 2
 
-        if time >= record:
-            loses += 1
-        else:
-            break
+    # t = record (time when we start winning)
 
-    return record - (loses * 2) - 1
+    x1 = (t - math.sqrt(t**2 - 4 * d)) // 2
+    x2 = (t + math.sqrt(t**2 - 4 * d)) // 2
 
+    return int(abs(x1 - x2))
 
 
 if __name__ == '__main__':
