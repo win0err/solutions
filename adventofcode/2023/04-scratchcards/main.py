@@ -19,12 +19,7 @@ def parse_input(filename):
 
 
 def solve_1(cards):
-    total_score = 0
-
-    for matching_count in cards:
-        total_score += int(2**(matching_count - 1))
-
-    return total_score
+    return sum(int(2**(matching_count - 1)) for matching_count in cards)
 
 
 def solve_2(cards):
