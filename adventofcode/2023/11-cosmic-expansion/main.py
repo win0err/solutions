@@ -15,7 +15,6 @@ def parse_input(filename):
 
 
 def count_voids(rows):
-
     cols = list(zip(*rows))
     w, h = len(cols), len(rows)
 
@@ -26,7 +25,6 @@ def count_voids(rows):
 
         if all(ch == EMPTY_SPACE for ch in col):
             count += 1
-
 
     voids_at_y = [0] * h
     count = 0
