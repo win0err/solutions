@@ -6,7 +6,7 @@ def parse_input(filename):
 
     with open(filename, 'r+') as f:
         lines = f.read().strip().splitlines()
-        sequences = [[int(n) for n in l.split()]for l in lines]
+        sequences = [[int(n) for n in l.split()] for l in lines]
 
     return sequences
 
