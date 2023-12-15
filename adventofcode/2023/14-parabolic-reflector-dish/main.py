@@ -16,31 +16,25 @@ def tilt_line(line):
     line = [ch for ch in line]
 
     empty_idx = line.index(EMPTY_SPACE)
-    idx = empty_idx + 1
+    curr_idx = empty_idx + 1
 
     try:
-        while idx < len(line):
-            if line[idx] == ROCK_ROUNDED:
-                line[idx], line[empty_idx] = EMPTY_SPACE, ROCK_ROUNDED
+        while curr_idx < len(line):
+            if line[curr_idx] == ROCK_ROUNDED:
+                line[curr_idx], line[empty_idx] = EMPTY_SPACE, ROCK_ROUNDED
 
-                while line[empty_idx] != EMPTY_SPACE:
-                    empty_idx += 1
+                empty_idx = line.index(EMPTY_SPACE, empty_idx)
+                curr_idx = empty_idx + 1
 
-                idx = empty_idx + 1
+            elif line[curr_idx] == ROCK_CUBIC:
+                empty_idx = line.index(EMPTY_SPACE, curr_idx)
+                curr_idx = empty_idx + 1
 
-            elif line[idx] == ROCK_CUBIC:
-                empty_idx = idx + 1
+            elif line[curr_idx] == EMPTY_SPACE:
+                while line[curr_idx] == EMPTY_SPACE:
+                    curr_idx += 1
 
-                while line[empty_idx] != EMPTY_SPACE:
-                    empty_idx += 1
-
-                idx = empty_idx + 1
-
-            elif line[idx] == EMPTY_SPACE:
-                while line[idx] == EMPTY_SPACE:
-                    idx += 1
-
-    except IndexError:
+    except (IndexError, ValueError):
         pass  # done
 
     return line
