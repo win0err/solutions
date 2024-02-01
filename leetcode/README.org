@@ -46,3 +46,4 @@
 | 1431 | [[https://leetcode.com/problems/kids-with-the-greatest-number-of-candies][Kids With the Greatest Number of Candies]]       | [[file:algorithms/kids-with-the-greatest-number-of-candies.py][Python]], [[file:algorithms/kids-with-the-greatest-number-of-candies.php][PHP]] |
 | 1424 | [[https://leetcode.com/problems/diagonal-traverse-ii/][Diagonal Traverse II]]                           | [[file:algorithms/diagonal-traverse-ii.ts][TS]]          |
 | 2405 | [[https://leetcode.com/problems/optimal-partition-of-string/][Optimal Partition of String]]                    | [[file:algorithms/optimal-partition-of-string.js][JS]]          |
+| 2570 | [[https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/][Merge Two 2D Arrays by Summing Values]]          | [[file:algorithms/merge-two-2d-arrays-by-summing-values.ts][TS]]          |
