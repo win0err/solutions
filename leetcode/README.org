@@ -7,6 +7,7 @@
 |    2 | [[https://leetcode.com/problems/add-two-numbers][Add Two Numbers]]                                | [[file:algorithms/add-two-numbers.js][JS]], [[file:algorithms/add-two-numbers.php][PHP]]     |
 |    3 | [[https://leetcode.com/problems/longest-substring-without-repeating-characters][Longest Substring Without Repeating Characters]] | [[file:algorithms/longest-substring-without-repeating-characters.py][Python]]      |
 |   11 | [[https://leetcode.com/problems/container-with-most-water/][Container With Most Water]]                      | [[file:algorithms/container-with-most-water.js][JS]]          |
+|   14 | [[https://leetcode.com/problems/longest-common-prefix/][Longest Common Prefix]]                          | [[file:algorithms/longest-common-prefix.ts][TS]]          |
 |   26 | [[https://leetcode.com/problems/remove-duplicates-from-sorted-array][Remove Duplicates from Sorted Array]]            | [[file:algorithms/remove-duplicates-from-sorted-array.py][Python]], [[file:algorithms/remove-duplicates-from-sorted-array.js][JS]]  |
 |   35 | [[https://leetcode.com/problems/search-insert-position/][Search Insert Position]]                         | [[file:algorithms/search-insert-position.ts][TS]]          |
 |   53 | [[https://leetcode.com/problems/maximum-subarray/][Maximum Subarray]]                               | [[file:algorithms/maximum-subarray.py][Python]]      |
