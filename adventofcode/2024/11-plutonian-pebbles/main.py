@@ -1,36 +1,45 @@
+from collections import Counter
+
+
 def parse_input(filename):
     return [int(n) for n in open(filename, 'r+').readline().strip().split()]
 
 
-def blink(stones):
-    new_stones = []
+def blink(prev_state: Counter):
+    state = Counter(prev_state)
 
-    for n in stones:
-        s = str(n)
-        l = len(s)
+    for stone, amount in prev_state.items():
+        s = str(stone)
+        mid = len(s) // 2
 
-        if n == 0:
-            new_stones.append(1)
+        if stone == 0:
+            state[0] -= amount
+            state[1] += amount
+
         elif len(s) % 2 == 0:
-            new_stones.append(int(s[:l//2]))
-            new_stones.append(int(s[l//2:]))
-        else:
-            new_stones.append(n*2024)
+            state[stone] -= amount
 
-    return new_stones
+            state[int(s[:mid])] += amount
+            state[int(s[mid:])] += amount
+
+        else:
+            state[stone] -= amount
+            state[stone*2024] += amount
+
+    return state
 
 
 def count(stones, times):
-    s = [*stones]
+    state = Counter(stones)
 
     for _ in range(times):
-        s = blink(s)
+        state = blink(state)
 
-    return len(s)
+    return sum(state.values())
 
 
 if __name__ == '__main__':
     stones = parse_input('input.txt')
 
     print(f'Task 1: {count(stones, 25)}')
-    # print(f'Task 2: {count(stones, 75)}')
+    print(f'Task 2: {count(stones, 75)}')
