@@ -1,17 +1,18 @@
-def solve(numbers, bucket1=[], bucket2=[]):
-    if not numbers:
-        return abs(sum(bucket1) - sum(bucket2))
+def solve(n, numbers):
+    def recursive(idx = 0, bucket1 = 0, bucket2 = 0):
+        if idx == n:
+            return abs(bucket1 - bucket2)
 
-    n, *rest = numbers
+        return min(
+            recursive(idx+1, numbers[idx] + bucket1, bucket2),
+            recursive(idx+1, bucket1, numbers[idx] + bucket2),
+        )
 
-    return min(
-        solve(rest, [n] + bucket1, bucket2),
-        solve(rest, bucket1, [n] + bucket2),
-    )
+    return recursive()
 
 
 if __name__ == '__main__':
-    _ = input()
+    n = int(input())
     numbers = [int(x) for x in input().split(' ')]
 
-    print(solve(numbers))
+    print(solve(n, numbers))
