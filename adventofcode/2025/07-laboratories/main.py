@@ -1,3 +1,6 @@
+from collections import Counter
+
+
 def parse_input(filename: str):
     with open(filename) as file:
         lines = file.read().splitlines()
@@ -17,46 +20,31 @@ def solve_1(lines: list[str]):
                 splits += 1
                 state[i] = False
 
-                if i > 0:
-                    state[i - 1] = True
-
-                if i + 1 < len(line):
-                    state[i + 1] = True
+                for j in (i + 1, i - 1):
+                    if 0 <= j < len(line):
+                        state[j] = True
 
     return splits
 
 
 def solve_2(lines: list[str]):
-    cache: dict[tuple[int, int], int] = {}
+    state = Counter({lines[0].index('S'): 1})
 
-    def split(lines: list[str], line_number: int, pos: int) -> int:
-        if (line_number, pos) in cache:
-           return cache[(line_number, pos)]
+    for line in lines[1:]:
+        new_state: Counter[int] = Counter()
 
-        if line_number == len(lines) - 1:
-            return 1
+        for i, n in state.items():
+            if line[i] == '^':
+                for j in (i + 1, i - 1):
+                    if 0 <= j < len(line):
+                        new_state[j] += n
 
-        line = lines[line_number]
-        splits: int = 0
+            if line[i] == '.':
+                new_state[i] += n
 
-        if line[pos] == '.':
-            splits += split(lines, line_number + 1, pos)
+        state = new_state
 
-        if line[pos] == '^':
-            if pos - 1 >= 0:
-                splits += split(lines, line_number + 1, pos - 1)
-
-            if pos + 1 < len(line):
-                splits += split(lines, line_number + 1, pos + 1)
-
-        cache[(line_number, pos)] = splits
-
-        return splits
-
-    pos = lines[0].index('S')
-    lines = lines[1:]
-
-    return split(lines, 0, pos)
+    return sum(state.values())
 
 
 if __name__ == '__main__':
